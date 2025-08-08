@@ -13,6 +13,7 @@
   --breakpoint-lg: 976px;
   --color-coffee-50: #fcf4e8;
   --color-coffee-100: #fbefdd;
+  --color-coffee-900: #2c2521;
 }
 @layer base {
   html {
@@ -25,6 +26,9 @@
 
   p {
     font-family: sans-serif;
+  }
+  a {
+    font-family: 'Playwrite HU';
   }
 }
 

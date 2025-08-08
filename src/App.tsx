@@ -3,10 +3,12 @@ import reactLogo from "./assets/react.svg"
 import viteLogo from "/vite.svg"
 import "./App.css"
 import Hero from "./components/hero/Hero"
+import Navbar from "./components/navbar/Navbar"
 
 function App() {
   return (
     <>
+      <Navbar />
       <Hero />
     </>
   )

@@ -1,5 +1,6 @@
 import React from "react"
 import { Button } from "../ui/button"
+import { ArrowLongRightIcon } from "@heroicons/react/24/solid"
 
 export default function Hero() {
   return (
@@ -11,9 +12,13 @@ export default function Hero() {
         I’m a software engineer passionate about building scalable, elegant, and
         human-centered digital experiences.
       </p>
-      <Button variant={"link"} className="px-6 py-3 text-white">
-        View More
-      </Button>
+      <a
+        href="#"
+        className="inline-flex items-center border-b border-white text-white hover:text-gray-300 py-1"
+      >
+        <span>View More</span>
+        <ArrowLongRightIcon className="ml-2 h-5 w-5" />
+      </a>
     </section>
   )
 }
