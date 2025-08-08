@@ -1,17 +1,30 @@
 import React, { useState } from "react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
+import { motion } from "motion/react"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const [active, setActive] = useState("Home")
+
+  const links = ["Home", "Work", "Projects", "About", "Contact"]
 
   return (
     <nav className="bg-coffee-900 text-white py-4">
       <div className="max-w-10/12 mx-auto flex items-center justify-between px-6">
         {/* Logo */}
         <a href="#" className="text-xl font-bold">
-          <h1 className="text-3xl text-coffee-300 hover:text-coffee-100">
+          <motion.h1
+            initial={{ y: -100 }}
+            animate={{ y: 0 }}
+            transition={{
+              type: "tween",
+              ease: "easeOut",
+              duration: 0.5,
+            }}
+            className="text-3xl text-coffee-300 hover:text-coffee-100"
+          >
             TAIWO.O
-          </h1>
+          </motion.h1>
         </a>
 
         {/* Hamburger button (mobile) */}
@@ -34,19 +47,33 @@ export default function Navbar() {
           }`}
         >
           <ul className="flex flex-col md:flex-row md:space-x-6 md:justify-end md:max-w-md mx-auto">
-            {["Home", "Work", "Projects", "About", "Contact"].map((link) => (
-              <li
+            {links.map((link) => (
+              <motion.li
                 key={link}
-                className="border-b text-coffee-300 border-gray-700 md:border-none text-center md:text-left"
+                initial={{ y: -100 }}
+                animate={{ y: 0 }}
+                transition={{
+                  type: "tween",
+                  ease: "easeOut",
+                  duration: 0.5,
+                }}
+                className="border-b text-coffee-300 md:border-none text-center md:text-left"
               >
                 <a
                   href={`#${link.toLowerCase()}`}
-                  className="block px-3 py-3 hover:text-coffee-100"
-                  onClick={() => setIsOpen(false)}
+                  className={`block px-3 py-3 hover:text-coffee-100 ${
+                    active === link
+                      ? "underline underline-offset-8 decoration-coffee-300"
+                      : ""
+                  }`}
+                  onClick={() => {
+                    setIsOpen(false)
+                    setActive(link)
+                  }}
                 >
                   {link}
                 </a>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>
