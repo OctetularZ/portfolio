@@ -4,7 +4,7 @@ import { ArrowLongRightIcon } from "@heroicons/react/24/solid"
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-center bg-[url(/hero/hero-bg.jpg)] bg-cover bg-center">
+    <section className="min-h-screen flex flex-col justify-center items-center text-center bg-[url(/hero/hero-bg-star-no-shadow.png)] bg-cover bg-center">
       <h1 className="text-6xl md:text-7xl max-w-1/2 mb-6 text-white">
         "Some People Be So Focused On The Cheese, They Forget About The Trap"
       </h1>
