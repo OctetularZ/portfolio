@@ -18,7 +18,7 @@ export default function Navbar() {
             animate={{ y: 0 }}
             transition={{
               type: "tween",
-              ease: "easeOut",
+              ease: "easeInOut",
               duration: 0.5,
             }}
             className="text-3xl text-coffee-300 hover:text-coffee-100"
@@ -54,7 +54,7 @@ export default function Navbar() {
                 animate={{ y: 0 }}
                 transition={{
                   type: "tween",
-                  ease: "easeOut",
+                  ease: "easeInOut",
                   duration: 0.5,
                 }}
                 className="border-b text-coffee-300 md:border-none text-center md:text-left"
