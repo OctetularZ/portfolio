@@ -6,7 +6,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [active, setActive] = useState("Home")
 
-  const links = ["Home", "Work", "Projects", "About", "Contact"]
+  const links = ["Home", "Projects", "Work", "About", "Contact"]
 
   return (
     <nav className="bg-coffee-900 text-white py-4">
@@ -16,10 +16,10 @@ export default function Navbar() {
           <motion.h1
             initial={{ y: -100 }}
             animate={{ y: 0 }}
+            whileHover={{ scale: 1.1 }}
             transition={{
-              type: "tween",
-              ease: "easeInOut",
-              duration: 0.5,
+              y: { type: "tween", ease: "easeInOut", duration: 0.7 },
+              scale: { duration: 0.1 },
             }}
             className="text-3xl text-coffee-300 hover:text-coffee-100"
           >
@@ -52,10 +52,10 @@ export default function Navbar() {
                 key={link}
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
+                whileHover={{ scale: 1.1 }}
                 transition={{
-                  type: "tween",
-                  ease: "easeInOut",
-                  duration: 0.5,
+                  y: { type: "tween", ease: "easeInOut", duration: 0.7 },
+                  scale: { duration: 0.1 },
                 }}
                 className="border-b text-coffee-300 md:border-none text-center md:text-left"
               >
