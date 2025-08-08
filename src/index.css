@@ -11,9 +11,16 @@
   --breakpoint-sm: 480px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 976px;
-  --color-coffee-50: #fcf4e8;
-  --color-coffee-100: #fbefdd;
-  --color-coffee-900: #2c2521;
+  /* --color-coffee-50: #fcf4e8; */
+  --color-coffee-100: #D4CABB;
+  /* --color-coffee-200: #efca95; */
+  --color-coffee-300: #FAEEDC;
+  /* --color-coffee-400: #e49f3f; */
+  --color-coffee-500: #A6A399;
+  /* --color-coffee-600: #9d6820; */
+  --color-coffee-700: #32240E;
+  /* --color-coffee-800: #422d0e; */
+  --color-coffee-900: #2A2420;
 }
 @layer base {
   html {

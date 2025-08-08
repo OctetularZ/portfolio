@@ -4,11 +4,11 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="bg-coffee-100 text-white py-4">
+    <nav className="bg-coffee-900 text-white py-4">
       <div className="max-w-10/12 mx-auto flex items-center justify-between px-6">
         {/* Logo */}
         <a href="#" className="text-xl font-bold">
-          <h1 className="text-3xl text-coffee-900">TAIWO.O</h1>
+          <h1 className="text-3xl text-coffee-300">TAIWO.O</h1>
         </a>
 
         {/* Hamburger button (mobile) */}
@@ -52,11 +52,11 @@ export default function Navbar() {
             {["Home", "Work", "Projects", "About", "Contact"].map((link) => (
               <li
                 key={link}
-                className="border-b text-coffee-900 border-gray-700 md:border-none text-center md:text-left"
+                className="border-b text-coffee-300 border-gray-700 md:border-none text-center md:text-left"
               >
                 <a
                   href={`#${link.toLowerCase()}`}
-                  className="block px-3 py-3 hover:text-gray-400"
+                  className="block px-3 py-3 hover:text-coffee-100"
                   onClick={() => setIsOpen(false)}
                 >
                   {link}
