@@ -9,7 +9,9 @@ export default function Navbar() {
       <div className="max-w-10/12 mx-auto flex items-center justify-between px-6">
         {/* Logo */}
         <a href="#" className="text-xl font-bold">
-          <h1 className="text-3xl text-coffee-300">TAIWO.O</h1>
+          <h1 className="text-3xl text-coffee-300 hover:text-coffee-100">
+            TAIWO.O
+          </h1>
         </a>
 
         {/* Hamburger button (mobile) */}

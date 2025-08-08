@@ -14,7 +14,7 @@ export default function Hero() {
       </p>
       <a
         href="#"
-        className="inline-flex items-center border-b border-coffee-900 text-coffee-900 hover:text-coffee-100 py-1"
+        className="inline-flex items-center border-b border-coffee-900 text-coffee-900 hover:text-coffee-500 py-1"
       >
         <span>View More</span>
         <ArrowLongRightIcon className="ml-2 h-5 w-5" />
