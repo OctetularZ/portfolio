@@ -32,7 +32,7 @@ export default function Hero() {
           onMouseLeave={() => setHovered(false)}
         >
           <span>View More</span>
-          <motion.div animate={{ x: hovered ? 5 : 0 }}>
+          <motion.div animate={{ x: hovered ? 8 : 0 }}>
             <ArrowLongRightIcon className="ml-2 h-5 w-5" />
           </motion.div>
         </a>
