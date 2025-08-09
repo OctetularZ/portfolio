@@ -29,6 +29,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     background-color: var(--color-coffee-900);
+    scroll-behavior: smooth;
   }
 
   h1 {

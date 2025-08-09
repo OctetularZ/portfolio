@@ -60,7 +60,7 @@ export default function Navbar() {
                 className="border-b text-coffee-300 md:border-none text-center md:text-left"
               >
                 <a
-                  href={`#${link.toLowerCase()}`}
+                  href={`#${link}`}
                   className={`block px-3 py-3 hover:text-coffee-100 ${
                     active === link
                       ? "underline underline-offset-8 decoration-coffee-300"
